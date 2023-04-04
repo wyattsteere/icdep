@@ -1,1 +1,2 @@
-# icdep
+# anti-dupe
+The most straightforward way to ensure that packets are recieved once and only once is to have the recipient provide a response that they recieved the packet. If there is no confirmation sent then the sender can assume that the packet was not recieved and will send another one. Additionally there could be a unique identifaction number (only has to be unique to this current session) added to the packet and if multiple of the same packet (matching identifaciton numbers) is recieved then the packet will be ignored. This would act as a plan B if the confirmation is not sent after the recipient succesfully recieves the packet, therefore the recipient would recieve two identical packets and would ignore the duplicate. 
